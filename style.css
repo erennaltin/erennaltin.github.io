@@ -8,7 +8,6 @@
 
 }
 body {
-  overflow: hidden;
   height: 100%;
   width: 100%;
 }
@@ -19,8 +18,10 @@ body {
   z-index: -13;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 .circle1 {
+  overflow: hidden;
   position: absolute;
   width: 30vw;
   height: 60vh;
@@ -36,6 +37,7 @@ body {
 }
 
 .circle2 {
+  overflow: hidden;
   position: absolute;
   width: 30vw;
   height: 30vw;
