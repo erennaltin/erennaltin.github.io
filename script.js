@@ -20,17 +20,19 @@ const loginTable = document.querySelector(".login");
 const informationTable = document.querySelector(".information");
 const personalName = document.querySelector("#personal-name");
 const bestTable = document.querySelector("#best-score");
+const navigation = document.querySelector(".navigation");
+const closeButton = document.querySelector("#close-sign");
 const words = ["car","flower","love","counter","assets","indicate","deliberate","beauty"];
 const pronouns = ["who","when","which"];
 let usedNumbers = [];
 let competitionTime = 60;
 let bestScore = localStorage.getItem('bestScore');
+let onNavigation = false;
 
 startbutton.addEventListener("click",openGame);
 okayButton.addEventListener("click", givePoint);
 passButton.addEventListener("click",changeWord);
 loginButton.addEventListener("click",checkLogin);
-
 
 
 function openGame(){
@@ -129,10 +131,9 @@ function givePoint(){
 
 function checkLogin(){
     if( usernameInput.value == part1.username && passwordInput.value == part1.password){
-        if( competition.style.display !== "block" && competitionTime != 0){
-            mainText.style.display = "block";
-            mainText.style.opacity = "100%";
-        }
+        mainText.style.display = "block";
+        mainText.style.opacity = "100%";
+        startbutton.style.display = "inline";
         startbutton.style.opacity = "100";
         welcomeSign.style.opacity = 0;
         welcomeSign.style.display = "none";
@@ -175,7 +176,6 @@ class Participants{
 
 const part1 = new Participants("a","a",60,0);
 
-   
-   
+
 
 
