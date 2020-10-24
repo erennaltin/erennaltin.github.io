@@ -50,6 +50,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 .navigation ul li{
+  text-align: left;
     font-family: 'Roboto', sans-serif;
     display: inline;
     font-size: 1vw;
