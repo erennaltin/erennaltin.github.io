@@ -130,7 +130,7 @@ function givePoint(){
 }
 
 function checkLogin(){
-    if( usernameInput.value == part1.username && passwordInput.value == part1.password){
+    // if( usernameInput.value == part1.username && passwordInput.value == part1.password){
         mainText.style.display = "block";
         mainText.style.opacity = "100%";
         startbutton.style.display = "inline";
@@ -140,16 +140,16 @@ function checkLogin(){
         loginTable.style.display = "none";
         informationTable.style.display = "block";
         informationTable.style.opacity = "100%";
-        personalName.innerHTML = part1.username;
+        personalName.innerHTML = `Welcome, ${usernameInput.value}`;
         bestTable.innerHTML = bestScore;
-    }
-    else{
-        loginError.style.opacity = "100%";
-        window.setTimeout(() => {
-            loginError.style.opacity = "0";
-        },1000);
+    // }
+    // else{
+    //     loginError.style.opacity = "100%";
+    //     window.setTimeout(() => {
+    //         loginError.style.opacity = "0";
+    //     },1000);
         
-    }
+    // }
 }
 
 function updateBest(){
@@ -175,7 +175,3 @@ class Participants{
 }
 
 const part1 = new Participants("a","a",60,0);
-
-
-
-

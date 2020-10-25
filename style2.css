@@ -261,7 +261,7 @@ body {
   .username {
     display: flex;
     flex-wrap: nowrap;
-    transform: translateX(10%);
+    transform: translateX(-5%);
   
   }
   .password {
@@ -312,28 +312,11 @@ body {
   }
   
   .personal {
-    display: flex;
-    flex-wrap: nowrap;
-    transform: translateX(37%);
     margin-bottom: 2vh;
-  }
+  } 
   
   #personal-name {
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-left: 10px;
   }
   
-  #how {
-    display: none;
-    
-  }
-
-  #close-sign {
-    display: none;
-    position: absolute;
-    font-size: 3vw;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 90vw;
-    margin-top: -90vh;
-  }
